@@ -1,0 +1,388 @@
+{
+    "intens": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hallo",
+                "hallo",
+                "Halo",
+                "halo",
+                "hi",
+                "Hi",
+                "Hii",
+                "Hiii",
+                "hii",
+                "hiii",
+                "pagi",
+                "Pagi",
+                "PAGI",
+                "PAgi",
+                "PAGi",
+                "Pg",
+                "morning",
+                "Morning",
+                "MORNING",
+                "Morn"
+            ],
+            "responses": [
+                "Hi!, ada yang bisa saya bantu ? kamu butuh obat atau klaim poin ?",
+                "Hi, BioBot disini, kamu butuh obat atau klaim poin ?",
+                "Halo, ini Biobot, kamu butuh obat atau klaim poin ?"
+            ]
+        },
+        {
+            "tag" : "Biobot",
+            "patterns": [
+                "Apa itu BioBot ?",
+                "Biobot, itu apa ?",
+                "Apa sih BioBot ?",
+                "Apa ini ?",
+                "Siapa Kamu BioBot ?"
+            ],
+            "responses": [
+                "Biobot adalah chatbot tentang memberikan rekomendasi obat dari BioFarma",
+                "BioBot adalah teman kamu dikala sakit",
+                "BioBot bakal kasih informasi apa aja yang kamu butuhkan"
+            ]
+        },
+        {
+            "tag" : "jawaban_layanan_obat",
+            "patterns": [
+                "obat",
+                "OBAT",
+                "Obat",
+                "OBat",
+                "OBAt",
+                "oBat",
+                "bat",
+                "Bat"
+            ],
+            "responses" : [
+                "Apa yang kamu rasakan sekarang ?",
+                "Gimana yang kamu rasakan ?",
+                "Kamu lagi sakit apa ?",
+                "Gimana kondisi kamu ?",
+                "Kenapa, ada apa ? Cerita coba"
+            ]
+        },
+        {
+            "tag": "demam",
+            "patterns": [
+              "Saya merasa demam.", 
+              "Suhu tubuh saya tinggi.", 
+              "Badan terasa panas.",
+              "suhu tubuh saya lagi tinggi nih", 
+              "badan terasa agak panas",
+              "demmam parah",
+              "demam nih",
+              "saya merasa demmam",
+              "Suhu badan saya meningkat",
+              "Tubuh saya terasa hangat",
+              "Ada kenaikan suhu tubuh",
+              "Badan terasa lebih panas dari biasanya",
+              "Suhu saya melonjak",
+              "Suhu tubuhku meningkat",
+              "Tubuh terasa agak panas",
+              "Merasa demam sepanjang hari",
+              "Saya punya demam",
+              "Demamku tidak kunjung turun",
+              "Suhu badanku tinggi",
+              "Badanku terasa kurang nyaman karena panas",
+              "nggeregesi"
+            ],
+            "responses": [
+                "Kamu mungkin mengalami demam. Coba minum parasetamol untuk meredakan demam."
+            ]
+        },
+        {
+            "tag": "flu",
+            "patterns": [
+              "Saya batuk-batuk.", 
+              "Pilek tak kunjung sembuh.", 
+              "Tenggorokan terasa sakit.",
+              "Saya terus bersin-bersin",
+              "Napas saya terasa berat",
+              "Pilekku nggak kunjung sembuh",
+              "Saya merasa lelah dan menggigil",
+              "Hidung saya tersumbat",
+              "Pilek sudah berlangsung beberapa hari"
+            ],
+            "responses": ["Sepertinya Anda sedang mengalami flu. Cobalah minum air hangat dan istirahat. Anda juga bisa menggunakan obat batuk dan pilek over-the-counter."]
+        },
+        {
+            "tag": "maag",
+            "patterns": [
+              "Saya sering merasa perut kembung.", 
+              "Sakit perut setelah makan.", 
+              "Sering bersendawa.",
+              "Perutku terasa tak nyaman",
+              "Setelah makan, saya merasa penuh dan tidak nyaman",
+              "Saya merasa mual setelah makan"
+            ],
+            "responses": ["Anda mungkin mengalami masalah pencernaan seperti maag. Hindari makanan pedas dan berlemak. Anda bisa mencoba obat antasida untuk meredakan gejala."]
+        },
+        {
+            "tag": "alergi",
+            "patterns": [
+              "Kulit saya merah-merah dan gatal.", 
+              "Sesak napas.", 
+              "Mata saya berair dan gatal.",
+              "Mata saya gatal dan berair",
+              "Saya kesulitan bernapas",
+              "Kulit saya merah dan gatal-gatal",
+              "Saya merasa gatal di seluruh tubuh"
+            ],
+            "responses": ["Anda mungkin memiliki reaksi alergi. Hindari pemicu alergi jika diketahui. Gunakan antihistamin untuk mengatasi gejala seperti gatal-gatal dan mata berair."]
+        },
+        {
+            "tag": "sakit-kepala",
+            "patterns": [
+              "Saya mengalami sakit kepala yang parah.", 
+              "Kepala terasa berdenyut.", 
+              "Sakit kepala setelah stres.",
+              "Sakit kepala bagian belakang",
+              "Saya merasa pusing dan tidak nyaman",
+              "Sakit kepala ini membuat saya kesulitan berkonsentrasi"
+            ],
+            "responses": ["Sakit kepala bisa disebabkan oleh berbagai faktor. Pastikan Anda cukup istirahat dan minum air. Anda bisa menggunakan obat pereda nyeri yang mengandung ibuprofen atau parasetamol."]
+        },
+        {
+            "tag": "hipertensi",
+            "patterns": [
+              "Saya sering merasa pusing dan lelah.", 
+              "Sakit kepala di bagian belakang.", 
+              "Seringkali mengalami denyut jantung cepat.",
+              "Nadi saya terasa berdetak dengan cepat",
+              "Saya merasa pusing ketika berdiri",
+              "Tekanan darahku tinggi, dan saya merasa lelah",
+              "Saya merasa jantung berdetak kuat"
+            ],
+            "responses": ["Gejala tersebut bisa terkait dengan hipertensi. Anda harus berkonsultasi dengan dokter untuk evaluasi lebih lanjut dan mungkin memerlukan obat penurun tekanan darah."]
+        },
+        {
+            "tag": "diabetes",
+            "patterns": [
+              "Sering merasa haus dan lapar.", 
+              "Berat badan menurun tiba-tiba.", 
+              "Luka sulit sembuh.",
+              "Saya selalu merasa haus dan lapar",
+              "Berat badan saya turun drastis",
+              "Luka kecil pun butuh waktu lama untuk sembuh"
+            ],
+            "responses": ["Gejala ini dapat menunjukkan diabetes. Penting untuk mengukur gula darah dan berkonsultasi dengan dokter. Pengaturan pola makan dan obat-obatan mungkin diperlukan."]
+        },
+        {
+            "tag": "infeksi-urinaria",
+            "patterns": [
+              "Sering merasa ingin buang air kecil.", 
+              "Nyeri saat buang air kecil.", 
+              "Urine berbau tidak sedap.",
+              "Seringkali saya harus ke kamar mandi",
+              "Saat buang air kecil, ada rasa perih",
+              "Urin saya terasa tidak normal"
+            ],
+            "responses": ["Anda mungkin mengalami infeksi saluran kemih. Minumlah banyak air dan konsultasikan ke dokter. Dokter mungkin meresepkan antibiotik."]
+          },
+          {
+            "tag": "asma",
+            "patterns": [
+              "Sesak napas terutama saat berolahraga.", 
+              "Dada terasa berat.", 
+              "Batuk yang memburuk pada malam atau pagi hari.",
+              "Saat berolahraga, napas saya terasa terbatas",
+              "Saya merasa sesak napas terutama di malam hari",
+              "Saya batuk-batuk terutama di pagi hari"
+            ],
+            "responses": ["Gejala ini bisa mengindikasikan asma. Anda harus mengunjungi dokter untuk pengujian lebih lanjut dan pengelolaan asma, termasuk penggunaan obat bronkodilator."]
+        },
+        {
+            "tag": "radang-usus",
+            "patterns": [
+              "Perut kram dan sakit.", 
+              "Pembengkakan pada perut.", 
+              "Perubahan frekuensi buang air besar.",
+              "Saya merasa kram perut yang kuat",
+              "Perut saya membengkak dan tidak nyaman",
+              "Frekuensi buang air besar saya berubah"
+            ],
+            "responses": ["Gejala ini bisa menunjukkan radang usus. Segera berkonsultasi dengan dokter untuk diagnosis dan mungkin memerlukan penggunaan obat antiinflamasi."]
+        },
+        {
+            "tag": "kolesterol-tinggi",
+            "patterns": [
+              "Tidak ada gejala khusus.", 
+              "Keluhan nyeri pada dada.", 
+              "Sering merasa lelah.",
+              "Saya merasa baik-baik saja",
+              "Saya merasa ada yang tidak beres di bagian dada",
+              "Sering merasa letih dan tidak bertenaga"
+            ],
+            "responses": ["Kolesterol tinggi mungkin tidak menimbulkan gejala, tetapi dapat meningkatkan risiko penyakit jantung. Perubahan gaya hidup dan obat-obatan mungkin diperlukan. Konsultasikan ke dokter."]
+        },
+        {
+            "tag": "pilek",
+            "patterns": [
+              "Hidung tersumbat.", 
+              "Bersin-bersin.", 
+              "Produksi lendir yang berlebihan.",
+              "Hidung saya penuh lendir dan tersumbat",
+              "Saya terus bersin-bersin",
+              "Lendir saya keluar dengan banyak"
+            ],
+            "responses": ["Anda mungkin mengalami pilek biasa. Istirahat dan minumlah banyak air. Obat-obatan bebas bisa membantu meredakan gejala."]
+        },
+        {
+            "tag": "tekanan-darah-rendah",
+            "patterns": [
+              "Sering merasa pusing saat berdiri.", 
+              "Lemas atau lelah secara umum.", 
+              "Mengalami pingsan atau pucat.",
+              "Setiap kali saya bangun, saya merasa pusing",
+              "Saya merasa sangat lelah sepanjang waktu",
+              "Saya pingsan dan kulit saya terlihat pucat"
+            ],
+            "responses": ["Gejala ini dapat menunjukkan tekanan darah rendah. Pastikan Anda cukup minum air dan hindari berdiri terlalu cepat. Berkonsultasilah dengan dokter jika gejala berlanjut."]
+        },
+        {
+            "tag": "gastroenteritis",
+            "patterns": [
+              "Muntah-muntah.", 
+              "Diare.", 
+              "Kram perut hebat.",
+              "Saya merasa mual dan muntah-muntah",
+              "Saya mengalami diare berulang kali",
+              "Saya kram perut yang sangat kuat"
+            ],
+            "responses": ["Anda mungkin mengalami gastroenteritis. Tetap terhidrasi dan hindari makanan berlemak atau pedas. Istirahat dan konsultasi ke dokter jika gejala memburuk."]
+        },
+        {
+            "tag": "infeksi-saluran-napas",
+            "patterns": [
+              "Batuk kering.", 
+              "Tenggorokan terasa sakit saat menelan.", 
+              "Produksi lendir saat batuk.",
+              "Saya terus batuk-batuk kering",
+              "Tenggorokan saya terasa sakit ketika menelan",
+              "Setiap kali saya batuk, ada lendir yang keluar"
+            ],
+            "responses": ["Gejala ini mengindikasikan infeksi saluran napas atas. Minumlah cairan hangat dan istirahat. Anda bisa menggunakan obat batuk dan pereda nyeri sesuai petunjuk."]
+        },
+        {
+            "tag": "infeksi-kulit",
+            "patterns": [
+              "Kulit kemerahan dan bengkak.", 
+              "Merasa gatal dan perih.", 
+              "Mungkin terdapat nanah pada area tertentu.",
+              "Kulit saya tiba-tiba merah dan bengkak",
+              "Saya merasa sangat gatal dan kulit terasa perih",
+              "Ada benjolan kecil yang terasa sakit pada kulit"
+            ],
+            "responses": ["Anda mungkin memiliki infeksi kulit. Jaga kebersihan, hindari menggaruk, dan gunakan salep antibiotik jika diperlukan. Jika infeksi semakin parah, konsultasikan ke dokter."]
+        },
+        {
+            "tag": "osteoporosis",
+            "patterns": [
+              "Tulang terasa sakit.", 
+              "Mengalami patah tulang ringan tanpa sebab yang jelas.", 
+              "Postur tubuh membungkuk.",
+              "Saya merasa nyeri di area tulang",
+              "Beberapa tulang saya patah tanpa sebab yang jelas",
+              "Punggung saya terlihat semakin membungkuk"
+            ],
+            "responses": ["Gejala ini bisa mengindikasikan osteoporosis. Pastikan asupan kalsium dan vitamin D. Dokter dapat memberikan rekomendasi obat untuk menguatkan tulang."]
+        },
+        {
+            "tag": "anemia",
+            "patterns": [
+              "Merasa lelah secara terus-menerus.", 
+              "Pucat pada kulit dan selaput lendir.", 
+              "Mengalami sesak napas ringan.",
+              "Saya merasa lelah yang berlebihan",
+              "Warna kulit saya terlihat pucat",
+              "Saat beraktivitas, napas saya terasa pendek"
+            ],
+            "responses": ["Gejala ini bisa menunjukkan anemia. Konsultasikan dengan dokter untuk pemeriksaan darah. Suplemen zat besi atau perubahan diet mungkin diperlukan."]
+        },
+        {
+            "tag" : "jawaban_layanan_klaim",
+            "patterns": [
+                "klaim poin",
+                "KLAIM POIN",
+                "KLAIM poin",
+                "klain POIN",
+                "klaim point",
+                "KLAIM POINt",
+                "KLAIM point",
+                "klain POINt",
+                "klaim",
+                "KLAIM",
+                "Klaim",
+                "CLAIM",
+                "claim",
+                "Poin",
+                "POIN",
+                "POINT",
+                "point",
+                "poin"
+            ],
+            "responses": [
+                "Buka Kamera!",
+                "buka kamera!",
+                "klik kamera",
+                "buka kamera"
+            ]
+        },
+        {
+            "tag": "thnakyou",
+            "patterns": [
+                "terima kasih",
+                "thanks",
+                "makasih",
+                "thank you"
+            ],
+            "responses" : [
+                "ada lagi gak yang kamu rasakan ?",
+                "kamu merasa apa lagi ?",
+                "terus apalagi yang kamu rasain ?"
+            ]
+        },
+        {
+            "tag": "oke",
+            "patterns": [
+              "oke",
+              "OKE",
+              "allright",
+              "ok",
+              "OK",
+              "K",
+              "k"
+            ],
+            "responses": [
+              "Baiklah sampai jumpa!"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "bye",
+                "Byee",
+                "Bai",
+                "bai",
+                "See You",
+                "Sampai Jumpa",
+                "sampai jumpa",
+                "Good Bye",
+                "See ya"
+            ],
+            "responses":[
+                "Bye!",
+                "Dadaaaah !",
+                "Good Bye!",
+                "Semoga Harimu menyenangkan !",
+                "Semoga Lekas Sembuh !",
+                "Senang bisa membantu"
+            ]
+        }
+    ]
+}
